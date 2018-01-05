@@ -1,0 +1,90 @@
+.home-header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background: #fff;
+    padding: 5px 15px;
+    .home-header-left {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        margin-right: 10px;
+    }
+    .home-header-main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title {
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: .9em;
+            color: gray;
+        }
+    }
+    .home-header-right {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        ion {
+            font-size: 20px;
+        }
+        .home-header-right_qrcode {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .home-header-right_arror-right {
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.home-row {
+    margin-top: 10px;
+    background: #fff;
+    padding: 0 15px;
+    .home-row-item {
+        height: 44px;
+        line-height: 44px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        .title {
+            flex: 1;
+        }
+        ion {
+            font-size: 25px;
+            color: #585757;
+            margin-right: 10px;
+        }
+    }
+    .home-row-item+.home-row-item {
+        &:before {
+            content: " ";
+            position: absolute;
+            top: 0px;
+            left: 10px;
+            right: 40px;
+            color: rgb(199, 199, 199);
+            background-color: rgb(199, 199, 199);
+            height: 1px;
+            transform: scaleY(.5);
+        }
+    }
+}

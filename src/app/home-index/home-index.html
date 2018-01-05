@@ -1,0 +1,27 @@
+<div class="home-header">
+    <div class="home-header-left">
+        <img [src]="data.avatar">
+    </div>
+    <div class="home-header-main">
+        <h4 class="title">{{data.realname}}</h4>
+        <p>手机号: {{data.mobile}}</p>
+    </div>
+    <div class="home-header-right">
+        <div class="home-header-right_qrcode">
+            <ion name="image" style="font-size: 20px;"></ion>
+        </div>
+        <div class="home-header-right_arror-right">
+            <ion name="ios-arrow-right"></ion>
+        </div>
+    </div>
+</div>
+
+<div class="home-row" *ngFor="let item of data.items">
+    <div class="home-row-item" (click)="_onClick(item)" *ngFor="let i of item">
+        <ion [name]="i.icon"></ion>
+        <div class="title">
+            {{i.title}}
+        </div>
+        <ion style="color: gray;" name="ios-arrow-right"></ion>
+    </div>
+</div>

@@ -2,7 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeModule } from '../../src/app/app';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+let routes: Routes = [{
+  path: '',
+  pathMatch: 'full',
+  redirectTo: 'home/index'
+}];
 @NgModule({
   declarations: [
     AppComponent
@@ -10,7 +15,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     HomeModule,
-    RouterModule.forRoot([], {
+    RouterModule.forRoot(routes, {
       useHash: true
     })
   ],

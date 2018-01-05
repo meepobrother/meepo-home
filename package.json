@@ -1,7 +1,7 @@
 {
-    "name": "meepo-repair",
-    "version": "1.0.0",
-    "description": "runner for angular",
+    "name": "meepo-home",
+    "version": "2.0.0",
+    "description": "home for angular",
     "main": "./bundles/meepo.umd.js",
     "module": "./esm5/meepo.js",
     "es2015": "./esm2015/meepo.js",
@@ -18,20 +18,20 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/meepobrother/meepo-repair.git"
+        "url": "git+https://github.com/meepobrother/meepo-home.git"
     },
     "keywords": [],
     "author": "imeepos",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/meepobrother/meepo-repair/issues"
+        "url": "https://github.com/meepobrother/meepo-home/issues"
     },
-    "homepage": "https://github.com/meepobrother/meepo-repair/README.md",
+    "homepage": "https://github.com/meepobrother/meepo-home/README.md",
     "devDependencies": {
         "@angular/cli": "^1.6.1",
-        "@angular/compiler": "5.2.0-beta.1",
-        "@angular/compiler-cli": "5.2.0-beta.1",
-        "@angular/platform-browser-dynamic": "5.2.0-beta.1",
+        "@angular/compiler": ">=5.1.2",
+        "@angular/compiler-cli": ">=5.1.2",
+        "@angular/platform-browser-dynamic": ">=5.1.2",
         "@types/core-js": "^0.9.43",
         "@types/node": "^8.5.1",
         "less": "^2.7.3",
@@ -45,12 +45,15 @@
         "typescript": "~2.4.2"
     },
     "dependencies": {
-        "@angular/common": "5.2.0-beta.1",
-        "@angular/core": "5.2.0-beta.1",
-        "@angular/forms": "5.2.0-beta.1",
-        "@angular/platform-browser": "5.2.0-beta.1",
-        "@angular/router": "5.2.0-beta.1",
+        "@angular/common": ">=5.1.2",
+        "@angular/core": ">=5.1.2",
+        "@angular/forms": ">=5.1.2",
+        "@angular/platform-browser": ">=5.1.2",
+        "@angular/router": ">=5.1.2",
+        "ionicons": "^3.0.0",
+        "meepo-base": ">=1.0.4",
         "meepo-forms": ">=1.7.2",
+        "meepo-icons": ">=1.0.6",
         "meepo-store": ">=1.0.4",
         "meepo-uploader": ">=1.6.0",
         "meepo-uuid": ">=1.1.1",

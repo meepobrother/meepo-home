@@ -2,15 +2,32 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-let routes: Routes = [];
+import { HomeRootComponent } from './home-root/home-root';
+import { HomeIndexComponent } from './home-index/home-index';
+import { StoreModule } from 'meepo-store';
+const HomeComponents = [
+    HomeIndexComponent,
+    HomeRootComponent
+]
+
+let routes: Routes = [{
+    path: 'home/index',
+    component: HomeIndexComponent
+}];
+
+import { IconsModule } from 'meepo-icons';
 @NgModule({
     declarations: [
+        ...HomeComponents
     ],
     imports: [
         CommonModule,
-        RouterModule.forChild(routes)
+        RouterModule.forChild(routes),
+        IconsModule,
+        StoreModule
     ],
     exports: [
+        ...HomeComponents
     ],
     providers: [],
 })
