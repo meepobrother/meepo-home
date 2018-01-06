@@ -17,7 +17,7 @@
 </div>
 
 <div class="home-row" *ngFor="let item of data.items">
-    <div class="home-row-item" (click)="_onClick(item)" *ngFor="let i of item">
+    <div class="home-row-item" (click)="_onClick(i)" *ngFor="let i of item">
         <ion [name]="i.icon"></ion>
         <div class="title">
             {{i.title}}

@@ -23,7 +23,9 @@
                 "../node_modules/meepo-forms/app.css",
                 "../node_modules/meepo-uploader/app.css",
                 "../node_modules/meepo-xscroll/app.css",
-                "../node_modules/meepo-icons/app.css"
+                "../node_modules/meepo-icons/app.css",
+                "../node_modules/meepo-minirefresh/app.css",
+                "../node_modules/meepo-bmap/app.css"
             ],
             "scripts": [],
             "environmentSource": "environments/environment.ts",

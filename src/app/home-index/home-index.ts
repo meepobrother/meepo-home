@@ -3,6 +3,7 @@ import { MeepoCache } from 'meepo-base';
 import { StoreService } from 'meepo-store';
 import { Title } from '@angular/platform-browser';
 import { homeIndexConfigToken } from '../db';
+import { Router } from '@angular/router';
 @Component({
     selector: 'home-index',
     templateUrl: './home-index.html',
@@ -13,7 +14,8 @@ export class HomeIndexComponent extends MeepoCache {
     constructor(
         public store: StoreService,
         public cd: ChangeDetectorRef,
-        public title: Title
+        public title: Title,
+        public router: Router
     ) {
         super(store, cd, title);
     }
@@ -29,6 +31,11 @@ export class HomeIndexComponent extends MeepoCache {
                     title: '钱包',
                     icon: 'ios-bookmarks',
                     link: ''
+                }],
+                [{
+                    title: '地址',
+                    icon: 'location',
+                    link: '/address/index'
                 }],
                 [{
                     title: '任务',
@@ -64,6 +71,13 @@ export class HomeIndexComponent extends MeepoCache {
     }
 
     _onClick(item: any) {
-        location.href = item.link;
+        console.log(item);
+        if (item.link) {
+            if (item.link.indexOf('http') >= 0) {
+                location.href = item.link;
+            } else {
+                this.router.navigate([item.link]);
+            }
+        }
     }
 }

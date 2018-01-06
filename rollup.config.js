@@ -243,6 +243,8 @@ let globals = {
     "meepo-store": "meepo-store",
     "meepo-uuid": "meepo-uuid",
     "meepo-xscroll": "meepo-xscroll",
+    "meepo-icons": "meepo-icons",
+    
 };
 
 let plugins = [
