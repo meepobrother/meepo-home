@@ -33,7 +33,7 @@ export class HomeIndexComponent extends MeepoCache {
                     link: ''
                 }],
                 [{
-                    title: '地址',
+                    title: '地址库',
                     icon: 'location',
                     link: '/address/index'
                 }, {
