@@ -53,6 +53,7 @@
         "ionicons": "^3.0.0",
         "meepo-address": ">=1.1.0",
         "meepo-base": ">=1.0.4",
+        "meepo-contacts": ">=1.1.1",
         "meepo-forms": ">=1.7.2",
         "meepo-icons": ">=1.0.6",
         "meepo-store": ">=1.0.4",

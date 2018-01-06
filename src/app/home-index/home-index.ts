@@ -36,6 +36,10 @@ export class HomeIndexComponent extends MeepoCache {
                     title: '地址',
                     icon: 'location',
                     link: '/address/index'
+                }, {
+                    title: '联系人',
+                    icon: 'ios-book',
+                    link: '/contact/index'
                 }],
                 [{
                     title: '任务',

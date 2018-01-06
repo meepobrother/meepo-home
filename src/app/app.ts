@@ -17,6 +17,7 @@ let routes: Routes = [{
 
 import { IconsModule } from 'meepo-icons';
 import { AddressModule } from 'meepo-address';
+import { ContactsModule } from 'meepo-contacts';
 
 @NgModule({
     declarations: [
@@ -27,7 +28,8 @@ import { AddressModule } from 'meepo-address';
         RouterModule.forChild(routes),
         IconsModule,
         StoreModule,
-        AddressModule
+        AddressModule,
+        ContactsModule
     ],
     exports: [
         ...HomeComponents
