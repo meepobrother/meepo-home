@@ -243,7 +243,14 @@ let globals = {
     "meepo-store": "meepo-store",
     "meepo-uuid": "meepo-uuid",
     "meepo-xscroll": "meepo-xscroll",
-    "meepo-icons": "meepo-icons",
+    "meepo-address": "meepo-address",
+    "meepo-autosize": "meepo-autosize",
+    "meepo-bmap": "meepo-bmap",
+    "meepo-contacts": "meepo-bmap",
+    "meepo-forms": "meepo-forms",
+    "meepo-swiper": "meepo-swiper",
+    "meepo-uploader": "meepo-uploader",
+    "ng-inline-svg": "ng-inline-svg",
     
 };
 
