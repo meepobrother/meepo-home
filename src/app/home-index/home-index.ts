@@ -1,6 +1,8 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { MeepoCache } from 'meepo-base';
 import { StoreService } from 'meepo-store';
+import { EventService } from 'meepo-event';
+import { FOOTER_SHOWN } from 'meepo-footer';
 import { Title } from '@angular/platform-browser';
 import { homeIndexConfigToken } from '../db';
 import { Router } from '@angular/router';
@@ -15,12 +17,14 @@ export class HomeIndexComponent extends MeepoCache {
         public store: StoreService,
         public cd: ChangeDetectorRef,
         public title: Title,
-        public router: Router
+        public router: Router,
+        public event: EventService
     ) {
         super(store, cd, title);
     }
 
     meepoInit() {
+        this.event.publish(FOOTER_SHOWN, '');
         let data = {
             avatar: './assets/img/photo.jpg',
             realname: '杨明明',
